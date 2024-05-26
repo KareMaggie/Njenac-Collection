@@ -141,6 +141,7 @@ footer {
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
+  list
 }
 
 .footer-section {
@@ -161,6 +162,7 @@ footer {
 
 .footer-section ul li {
   margin: 5px 0;
+  list-style: none;
 }
 
 .footer-section ul li a {
