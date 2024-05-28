@@ -43,6 +43,7 @@
 nav {
     text-align: center;
     list-style-type: none;
+  align-self: center;
   }
   
 .menu {
