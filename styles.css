@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 .container h1  {
-  background-color: aqua;
   padding-top: 20px;
   padding-bottom: 20px;
   object-fit: cover;
