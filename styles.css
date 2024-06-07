@@ -89,12 +89,11 @@ nav {
     right: 0px;
     width: 50px;
 }
-.collections img{
-    width: 56%;
-    margin: 1px auto;
-    display: block;
-    align-items:center;
+.collections img {
+  width: 100%;
+  height: auto; /* This ensures the image maintains its aspect ratio */
 }
+
 .collections p{
     text-align: center;
 }
