@@ -18,25 +18,33 @@
   border-radius: 20px;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0;
+
+
+header {
+  background-color: #f8f9fa; /* Set your desired color */
+  padding: 20px 0;
 }
 
-.header-title {
-  flex-grow: 1;
-  text-align: center;
+header .navbar {
+  background-color: transparent;
 }
 
-.navbar {
-  margin-right: 10px;
-  background-color: blue;
+header h1, header p, header .btn {
+  color: #000; /* Adjust text and button color for contrast */
 }
 
-.header-links {
-  margin-left: 10px;
+header .form-control {
+  border: 1px solid #000;
+}
+
+header .btn-outline-success {
+  color: #000;
+  border-color: #000;
+}
+
+header .btn-outline-success:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 .container .d-flex .navbar .form-control .form-inline .btn .form-control {
