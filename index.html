@@ -8,63 +8,84 @@
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="icon" href="logo.png">
+  <style>
+    .collections {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .collections img {
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay-text {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-   <header>
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-md-4">
-        <nav class="navbar navbar-light">
-          <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </nav>
-      </div>
-      <div class="col-md-4 text-center">
-        <h1 class="h5 mb-0">NJENAC COLLECTIONS</h1>
-        <p>The Best in Town!</p>
-      </div>
-      <div class="col-md-4 text-right">
-        <a href="#" class="btn btn-outline-primary btn-sm">Order</a>
+  <header>
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <nav class="navbar navbar-light">
+            <form class="form-inline">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </nav>
+        </div>
+        <div class="col-md-4 text-center">
+          <h1 class="h5 mb-0">NJENAC COLLECTIONS</h1>
+          <p>The Best in Town!</p>
+        </div>
+        <div class="col-md-4 text-right">
+          <a href="#" class="btn btn-outline-primary btn-sm">Order</a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="about.html">Content</a>
-            <a class="dropdown-item" href="contact.html">Delivery</a>
-          </div>
-        </li>
-      </ul>
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="about.html">Content</a>
+              <a class="dropdown-item" href="contact.html">Delivery</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-
-  
+  </nav>
 
   <hr>
 
-        <div class="collections">
-          <img src="nje.jpg" alt="blanket" >
-          <p>Best Product</p>
-          <p>Ksh. 2000</p>
-        </div>
-      
-  
+  <div class="collections">
+    <img src="nje.jpg" alt="blanket">
+    <div class="overlay-text">
+      <p>Best Product</p>
+      <p>Ksh. 2000</p>
+    </div>
+  </div>
 
   <hr>
 
@@ -75,31 +96,39 @@
         <div class="carousel-item active">
           <div class="row">
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="chiffon.jpg" alt="Image 1" class="img-fluid">
-                <h5>Price</h5>
-                <p class="product-price">Ksh 150</p>
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 150</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="f.jpg" alt="Image 2" class="img-fluid">
-                <h5>Price</h5>
-                <p class="product-price">Ksh 500</p>
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 500</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="fan.jpg" alt="Image 3" class="img-fluid">
-                <h5>Price</h5>
-                <p class="product-price">Ksh 150</p>
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 150</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="fancy.jpg" alt="Image 4" class="img-fluid">
-                <h5>Price</h5>
-                <p class="product-price">Ksh 150 Each</p>
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 150 Each</p>
+                </div>
               </div>
             </div>
           </div>
@@ -107,31 +136,39 @@
         <div class="carousel-item">
           <div class="row">
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="h.jpg" alt="Image 5" class="img-fluid">
-                <h5>Price</h5>
-                <p class="product-price">Ksh 500</p>
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 500</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="k.jpg" alt="Image 6" class="img-fluid">
-                <h5>Price</h5>
-                <p class="product-price">Ksh 500</p>
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 500</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="m.jpg" alt="Image 7" class="img-fluid">
-                <h5>Price</h5>
-                <p class="product-price">Ksh 500</p>
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 500</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="n.jpg" alt="Image 8" class="img-fluid">
-                <h5>Price</h5>
-                <p class="product-price">Ksh 500</p>
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 500</p>
+                </div>
               </div>
             </div>
           </div>
@@ -151,16 +188,12 @@
 
   <hr>
 
-  
-  
-      
-        <div class="collections">
-          <img src="tops.jpg" alt="blanket">
-          <p>Best Seller</p>
-        </div>
-      </div>
-    
-
+  <div class="collections">
+    <img src="tops.jpg" alt="blanket">
+    <div class="overlay-text">
+      <p>Best Seller</p>
+    </div>
+  </div>
 
   <hr>
 
@@ -170,31 +203,39 @@
         <div class="carousel-item active">
           <div class="row">
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="throw pillow.jpg" alt="Image 1" class="img-fluid">
-                <h5>Throw Pillow</h5>
-                <p class="product-price">Ksh 500</p>
+                <div class="overlay-text">
+                  <h5>Throw Pillow</h5>
+                  <p class="product-price">Ksh 500</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
+              <div class="collections">
                 <img src="r.jpg" alt="Image 2" class="img-fluid">
-                <h5>Throw Pillow</h5>
-                <p class="product-price">Ksh 500</p>
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 300</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
-                <img src="ppillooww.jpg" alt="Image 3" class="img-fluid">
-                <h5>Throw Pillows</h5>
-                <p class="product-price">Ksh 500</p>
+              <div class="collections">
+                <img src="red.jpg" alt="Image 3" class="img-fluid">
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 200</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
-                <img src="pillow.jpg" alt="Image 4" class="img-fluid">
-                <h5>Throw Pillows</h5>
-                <p class="product-price">Ksh 500 Each</p>
+              <div class="collections">
+                <img src="red lace.jpg" alt="Image 4" class="img-fluid">
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 300</p>
+                </div>
               </div>
             </div>
           </div>
@@ -202,31 +243,39 @@
         <div class="carousel-item">
           <div class="row">
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
-                <img src="o.jpg" alt="Image 5" class="img-fluid">
-                <h5>Throw Pillow</h5>
-                <p class="product-price">Ksh 150</p>
+              <div class="collections">
+                <img src="ribb.jpg" alt="Image 5" class="img-fluid">
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 500</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
-                <img src="njenav.jpg" alt="Image 6" class="img-fluid">
-                <h5>Throw Pillow</h5>
-                <p class="product-price">Ksh 500</p>
+              <div class="collections">
+                <img src="t.jpg" alt="Image 6" class="img-fluid">
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 500</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
-                <img src="njen.jpg" alt="Image 7" class="img-fluid">
-                <h5>Fleece Blanket</h5>
-                <p class="product-price">Ksh 3000</p>
+              <div class="collections">
+                <img src="tap.jpg" alt="Image 7" class="img-fluid">
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 150</p>
+                </div>
               </div>
             </div>
             <div class="col-md-3 col-sm-6 mb-4">
-              <div class="product-info">
-                <img src="nje.jpg" alt="Image 8" class="img-fluid">
-                <h5>Fleece Blanket</h5>
-                <p class="product-price">Ksh 1500</p>
+              <div class="collections">
+                <img src="top.jpg" alt="Image 8" class="img-fluid">
+                <div class="overlay-text">
+                  <h5>Price</h5>
+                  <p class="product-price">Ksh 150</p>
+                </div>
               </div>
             </div>
           </div>
@@ -244,81 +293,25 @@
     </div>
   </div>
 
-  <hr>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-md-7 col-sm-12 mb-4">
-        <main>
-          <h3>The History Of NJENAC COLLECTIONS</h3>
-          <p>NJENAC COLLECTIONS was started in the year 2014 by our founder Nancy Njeri after hitting rock bottom. She started with a bale of Ksh.1000. This bale had fancy tops and chiffon tops.</p>
-          <p>She was later joined by our investors, who helped the business grow. We are now found countrywide in our branches, having our main branch in Nairobi.</p>
-          <p>NJENAC COLLECTIONS has been participating in various activities like uplifting women by encouraging them to be the better versions of themselves. We have employed more than one hundred of these women, supporting them in the education of their children.</p>
-          <button class="btn btn-primary">READ MORE</button>
-        </main>
-      </div>
-      <div class="col-lg-4 col-md-5 col-sm-12 text-center">
-        <aside>
-          <img src="logo.png" alt="NJENAC COLLECTIONS Logo" class="img-fluid">
-        </aside>
-      </div>
-    </div>
-  </div>
-
-  <hr>
-
-  <div class="container">
-    <h2>Our Ratings Since 2014</h2>
-    <div class="image-container text-center">
-      <img src="ratings.jpg" alt="Ratings" class="img-fluid">
-    </div>
-  </div>
-
-  <hr>
-
-  <footer>
+  <footer class="bg-dark text-white mt-4">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 mb-4">
-          <h3>Customer Service</h3>
-          <ul class="list-unstyled">
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="privacy.html">Privacy & Policy</a></li>
-          </ul>
+        <div class="col-md-6">
+          <p class="mb-0">© 2023 NJENAC COLLECTIONS. All Rights Reserved.</p>
         </div>
-        <div class="col-md-4 mb-4">
-          <h3>Visit Our Store</h3>
-          <p>
-            Our Main Branch<br>
-            Nairobi Cbd<br>
-          </p>
-          <p>
-            Monday-Friday 10:00-19:00<br>
-            Saturday 10:00-17:00<br>
-          </p>
-          <h3>Contact</h3>
-          <p>+254 710233499</p>
-        </div>
-        <div class="col-md-4 mb-4">
-          <h3>Visit Our Socials</h3>
-          <p>
-            <a href="#"><img src="ig.jpg" alt="Instagram" class="social-icon"></a>
-            <a href="#"><img src="facebook.png" alt="Facebook" class="social-icon"></a>
-            <a href="#"><img src="social.png" alt="Pinterest" class="social-icon"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter" class="social-icon"></a>
+        <div class="col-md-6 text-right">
+          <p class="mb-0">Follow us on:
+            <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
           </p>
         </div>
       </div>
-    </div>
-    <div class="footer-bottom text-center">
-      &copy; NJENAC COLLECTIONS
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-  <script src="index.js" defer></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
